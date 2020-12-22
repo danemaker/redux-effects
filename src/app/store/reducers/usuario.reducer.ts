@@ -16,7 +16,7 @@ export interface usuarioState {
 
 export const usuarioInitialState: usuarioState = {
   id: null,
-  user: null,
+  user: new Usuario(0, '', '', ''),
   loaded: false,
   loading: false,
   error: null,

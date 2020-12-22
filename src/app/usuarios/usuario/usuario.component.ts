@@ -20,7 +20,7 @@ export class UsuarioComponent implements OnInit {
   ngOnInit() {
     this.store.select("usuario")
     .subscribe(({ user, loading, error }) => {
-      this.usuario = user || new Usuario(0, '', '', '');
+      this.usuario = user;
       this.loading = loading;
       this.error = error;
     });
